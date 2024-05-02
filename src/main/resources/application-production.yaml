@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-com2pf0l5elc73bt1tq0-a.oregon-postgres.render.com:5432/flowers_8xvg
+    username: jackhuynh
+    password: rtuAFHJoz4mcJDMIUecIkFSdsqyrYA84
+
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8080
+  tomcat:
+    accesslog:
+      enabled: true
