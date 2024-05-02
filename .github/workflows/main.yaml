@@ -28,6 +28,6 @@ jobs:
 
       - name: Build and push the image
         run: |
-          docker login --username isaiahdil --password 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 ghcr.io
+          docker login --username isaiahdil --password ${{secrets.ACCESS_TOKEN}} ghcr.io
           docker build -t ghcr.io/isaiahdil/demo:latest --file Dockerfile .  
           docker push ghcr.io/isaiahdil/demo:latest
